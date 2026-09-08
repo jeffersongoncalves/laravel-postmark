@@ -1,16 +1,16 @@
 <?php
 
-namespace Jeffersongoncalves\Postmark\Facades;
+namespace JeffersonGoncalves\Postmark\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Jeffersongoncalves\Postmark\Postmark
+ * @see \JeffersonGoncalves\Postmark\Postmark
  */
 class Postmark extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return 'laravel-postmark';
+        return \JeffersonGoncalves\Postmark\Postmark::class;
     }
 }

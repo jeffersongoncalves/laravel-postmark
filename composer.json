@@ -3,20 +3,28 @@
     "description": "PHP/Laravel client for the Postmark REST API: transactional email, templates, bounces, messages, stats, server and suppressions.",
     "keywords": [
         "laravel",
-        "laravel-postmark"
+        "postmark",
+        "api",
+        "email",
+        "transactional-email",
+        "bounces",
+        "templates"
     ],
     "homepage": "https://github.com/jeffersongoncalves/laravel-postmark",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
-            "name": "Jefferson Simão Gonçalves",
-            "email": "gerson.simao.92@gmail.com"
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.2",
-        "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^12.0|^13.0"
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0",
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "larastan/larastan": "^3.0",
@@ -27,12 +35,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Jeffersongoncalves\\Postmark\\": "src/"
+            "JeffersonGoncalves\\Postmark\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jeffersongoncalves\\Postmark\\Tests\\": "tests/"
+            "JeffersonGoncalves\\Postmark\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -52,10 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jeffersongoncalves\\Postmark\\PostmarkServiceProvider"
+                "JeffersonGoncalves\\Postmark\\PostmarkServiceProvider"
             ],
             "aliases": {
-                "Postmark": "Jeffersongoncalves\\Postmark\\Facades\\Postmark"
+                "Postmark": "JeffersonGoncalves\\Postmark\\Facades\\Postmark"
             }
         }
     },
